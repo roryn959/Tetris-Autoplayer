@@ -23,10 +23,10 @@ class RorysPlayer(Player):
     def __init__(self):
         from board import Shape
         self.revDict = {Shape.I:2, Shape.J:4, Shape.L:4, Shape.O:1, Shape.S:4, Shape.T:4, Shape.Z:2}
-        self.a = -1
-        self.b = -1
-        self.c = -1
-        self.d = 1
+        self.a = -0.51
+        self.b = -0.18
+        self.c = -0.35
+        self.d = 0.76
         
     def FindHeights(self, board):
         heights = [board.height for i in range(10)]
